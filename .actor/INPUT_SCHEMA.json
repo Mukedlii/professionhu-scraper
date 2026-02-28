@@ -1,0 +1,30 @@
+{
+    "title": "Profession.hu Scraper Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "searchUrl": {
+            "title": "Keresési URL",
+            "type": "string",
+            "description": "A profession.hu keresési URL",
+            "default": "https://www.profession.hu/allasok",
+            "editor": "textfield"
+        },
+        "maxPages": {
+            "title": "Maximum oldalak száma",
+            "type": "integer",
+            "description": "Hány oldalt scrape-eljen",
+            "default": 5,
+            "minimum": 1,
+            "maximum": 50,
+            "editor": "number"
+        },
+        "keyword": {
+            "title": "Kulcsszó szűrő (opcionális)",
+            "type": "string",
+            "description": "Szűrj pozícióra vagy cégre (pl. 'fejlesztő', 'marketing')",
+            "editor": "textfield"
+        }
+    },
+    "required": ["searchUrl"]
+}

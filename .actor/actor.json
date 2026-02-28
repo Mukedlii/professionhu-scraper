@@ -1,0 +1,11 @@
+{
+    "actorSpecification": 1,
+    "name": "professionhu-scraper",
+    "title": "Profession.hu Job Scraper",
+    "description": "Scrapes job listings from profession.hu including title, company, location and salary.",
+    "version": "0.0",
+    "buildTag": "latest",
+    "dockerfile": "./Dockerfile",
+    "readme": "./README.md",
+    "input": "./INPUT_SCHEMA.json"
+}
